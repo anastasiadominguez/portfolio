@@ -43,8 +43,37 @@
   font-size: xx-large;
 }
 .intro-image img {
-  width: 250px; /* oppure una misura a tua scelta */
-  height: 250px; /* deve essere uguale alla width per il cerchio */
-  border-radius: 50%; /* <-- questo crea il cerchio */
-  object-fit: cover; /* <-- fa sì che l'immagine riempia il cerchio senza deformarsi */
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .top-bar .link {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: x-large;
+    padding: 10px;
+  }
+
+  .intro-image img {
+    width: 150px;
+    height: 150px;
+  }
 }
