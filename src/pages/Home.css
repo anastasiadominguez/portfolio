@@ -1,0 +1,33 @@
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.intro-text {
+  padding: 20px;
+  font-size: xx-large;
+}
+.intro-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: x-large;
+    padding: 10px;
+  }
+
+  .intro-image img {
+    width: 150px;
+    height: 150px;
+  }
+}
