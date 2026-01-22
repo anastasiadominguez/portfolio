@@ -1,32 +1,29 @@
 import { useState } from "react";
-import logo from "/images/logoADBDef.png";
-import photo from "/images/photo.JPG";
 import "./App.css";
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import { createHashRouter, RouterProvider } from "react-router-dom";
+
+// Crea il router con le rotte nidificate
+const router = createHashRouter([
+  {
+    element: <MainLayout />, // Layout principale con header e footer
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <div className="main-container">
-        <div className="top-bar">
-          <div className="logo">
-            <img src={logo} className="logo" alt="Vite logo" />
-          </div>
-          <div className="link">
-            <div className="link-item">Home</div>
-            <div className="link-item">Chi sono</div>
-            <div className="link-item">Progetti</div>
-            <div className="link-item">Contatti</div>
-          </div>
-        </div>
-        <div className="intro">
-          <div className="intro-text">Anastasia Dominguez Burzio</div>
-          <div className="intro-image">
-            <img src={photo} alt="Intro" />
-          </div>
-        </div>
-      </div>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
