@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "/images/logoADB.png";
+import logo from "/images/logoADBDef.png";
 import photo from "/images/photo.JPG";
 import "./App.css";
 
