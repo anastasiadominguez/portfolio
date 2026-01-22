@@ -1,20 +1,28 @@
 .main-container {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.page-content {
+  flex: 1;
+  padding: 20px; /* Riduci il padding se vuoi meno spazio */
+  width: 100%;
+  max-width: 100%;
 }
 
 .top-bar {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #cec0c0;
   padding: 20px;
 }
 
 .top-bar .logo {
   flex: 2;
-  height: 4em;
+  height: 6em;
 }
 
 .top-bar .link {
@@ -29,6 +37,117 @@
 }
 .top-bar .link-item {
   min-width: 100px;
+}
+
+/* NAVIGATION LINKS */
+.link {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-item {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Linea di underline animata */
+.link-item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5f4e4e;
+  transition: width 0.3s ease;
+}
+
+/* Hover su link NON attivo */
+.link-item:not(.active):hover::after {
+  width: 100%;
+}
+
+/* Link ATTIVO */
+.link-item.active {
+  color: #5f4e4e;
+}
+
+.link-item.active::after {
+  width: 100%;
+  background-color: #5f4e4e;
+}
+
+/* Hover sul link attivo */
+.link-item.active:hover {
+  color: #5f4e4e;
+}
+
+/* ===== LANGUAGE SWITCHER ===== */
+.language-switcher {
+  display: flex;
+  gap: 15px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Linea di underline per hover */
+.lang-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5f4e4e;
+  transition: width 0.3s ease;
+}
+
+/* Hover su bottone NON attivo */
+.lang-btn:not(.active):hover::after {
+  width: 100%;
+}
+
+/* Bottone ATTIVO */
+.lang-btn.active {
+  color: #5f4e4e;
+}
+
+.lang-btn.active::after {
+  width: 100%;
+  background-color: #5f4e4e;
+}
+
+/* Hover sul bottone attivo */
+.lang-btn.active:hover {
+  color: #5f4e4e;
+}
+
+.footer {
+  background-color: #5f4e4e;
+  margin-top: auto; /* Spinge il footer in fondo */
+  padding: 20px;
+}
+
+.footer-copyright p {
+  color: #beb8b8;
+  text-align: right;
 }
 
 @media (max-width: 768px) {
