@@ -2,10 +2,20 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 import { useLanguage } from "../LanguageContext";
 import logo from "/images/logoADBDef.png";
 import "./MainLayout.css";
+import { useState } from "react";
 
 export default function MainLayout() {
   const { t, language, changeLanguage } = useLanguage();
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <>
@@ -15,28 +25,44 @@ export default function MainLayout() {
           <div className="logo">
             <img src={logo} className="logo" alt="Logo" />
           </div>
-          <nav className="link">
+
+          {/* HAMBURGER BUTTON */}
+          <button
+            className={`hamburger ${menuOpen ? "active" : ""}`}
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav className={`links ${menuOpen ? "active" : ""}`}>
             <Link
               to="/"
               className={`link-item ${location.pathname === "/" ? "active" : ""}`}
+              onClick={closeMenu}
             >
               {t("nav.home")}
             </Link>
             <Link
               to="/about"
               className={`link-item ${location.pathname === "/about" ? "active" : ""}`}
+              onClick={closeMenu}
             >
               {t("nav.about")}
             </Link>
             <Link
               to="/projects"
               className={`link-item ${location.pathname === "/projects" ? "active" : ""}`}
+              onClick={closeMenu}
             >
               {t("nav.projects")}
             </Link>
             <Link
               to="/contact"
               className={`link-item ${location.pathname === "/contact" ? "active" : ""}`}
+              onClick={closeMenu}
             >
               {t("nav.contact")}
             </Link>
