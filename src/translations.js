@@ -13,6 +13,11 @@ export const translations = {
       home: {
         name: "Anastasia Dominguez Burzio",
         subtitle: "Interaction Designer & Developer",
+        cta1: "Explore my projects",
+        cta2: "Learn more",
+        h2: "Featured projects",
+        project: "View project",
+        cta3: "View all projects →",
       },
       about: {
         title: "About Me",
@@ -139,6 +144,11 @@ export const translations = {
       home: {
         name: "Anastasia Dominguez Burzio",
         subtitle: "Interaction Designer & Developer",
+        cta1: "Scopri i miei progetti",
+        cta2: "Scopri di più",
+        h2: "Progetti in evidenza",
+        project: "Visualizza progetto",
+        cta3: "Vedi tutti i progetti →",
       },
       about: {
         title: "Chi Sono",
