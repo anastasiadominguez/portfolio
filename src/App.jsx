@@ -6,6 +6,8 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Project3D2D from "./pages/Project3D2D";
+import ProjectThesis from "./pages/ProjectThesis";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 // Crea il router con le rotte nidificate
@@ -24,6 +26,14 @@ const router = createHashRouter([
       {
         path: "/projects",
         element: <Projects />,
+      },
+      {
+        path: "/projects/thesis",
+        element: <ProjectThesis />,
+      },
+      {
+        path: "/projects/3d-2d",
+        element: <Project3D2D />,
       },
       {
         path: "/contact",

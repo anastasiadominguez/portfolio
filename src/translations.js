@@ -22,7 +22,7 @@ export const translations = {
       about: {
         title: "About Me",
         intro:
-          "Hi, I'm Anastasia. I graduated from Politecnico di Torino in Cinema and Media Engineering, a program that allowed me to combine technical skills with creativity. Over these five years, I worked on various projects with my colleagues, developing websites, interactive installations, and immersive applications. What fascinates me about computer engineering—whether code-focused or creative—is the relationship between people and machines: how they communicate, why they do so, and what meaning emerges from it. For my thesis, I brought this question into a naturally humanistic context: the museum. I asked myself: how can technology foster the encounter between culture and people? And above all: how can it dialogue with—without overpowering—established traditional languages, like the guided tour? Today I apply these principles as an Interaction Designer & Developer. Every project starts from a question: how does this technology create relationship and meaning for those who experience it? On Substack, I explore these themes from both technical and humanistic perspectives. My goal is to design digital experiences that respect the complexity of people and the cultural contexts they inhabit.",
+          "Hi, I'm Anastasia. \nI graduated from Politecnico di Torino in Cinema and Media Engineering, a program that allowed me to combine technical skills with creativity. Over these five years, I worked on various projects with my colleagues, developing websites, interactive installations, and immersive applications. \nWhat fascinates me about computer engineering, whether code-focused or creative, is the relationship between people and machines: how they communicate, why they do so, and what meaning emerges from it. \nFor my thesis, I brought this question into a naturally humanistic context: the museum. I asked myself: how can technology foster the encounter between culture and people? And above all: how can it dialogue with, without overpowering, established traditional languages, like the guided tour? \nToday I apply these principles as an Interaction Designer & Developer. Every project starts from a question: how does this technology create relationship and meaning for those who experience it? \nMy goal is to design digital experiences that respect the complexity of people and the cultural contexts they inhabit.",
         expertise: "Areas of Expertise",
 
         skill1_title: "Immersive & Interactive Design",
@@ -58,6 +58,9 @@ export const translations = {
           "Bachelor's Degree in Cinema and Media Communication Engineering",
         institution2: "Politecnico di Torino",
         year2: "2023",
+
+        cv1: "Download my complete CV",
+        cv2: "Download CV",
       },
       projects: {
         title: "Projects",
@@ -105,12 +108,18 @@ export const translations = {
         project9_title: "Video Production for Nonprofits",
         project9_desc:
           "Production, editing and post-production of video content for Essere Umani Onlus and Fondazione Casa di Carità. Includes color grading, motion graphics and sound design.",
-        project9_tags: "Video Editing, DaVinci Resolve, Motion Design, FFmpeg",
+        project9_tags: "Video Editing, DaVinci Resolve, Motion Design",
 
         project10_title: "Photorealistic 3D Modeling",
         project10_desc:
           "Creation of photorealistic 3D environments with Blender, including modeling, texturing with Substance Painter and rendering.",
         project10_tags: "Blender, Substance Painter, 3D Modeling, Rendering",
+
+        project11_title: "Frontend Development Internship - Ars Media",
+        project11_desc:
+          "Frontend developer internship at Ars Media. Developed responsive web interfaces, optimized performance, and collaborated with the design and backend teams. Gained practical experience in modern web development practices and client project management.",
+        project11_tags:
+          "HTML, CSS, JavaScript, Responsive Design, Web Development",
       },
       contact: {
         title: "Contact",
@@ -153,7 +162,7 @@ export const translations = {
       about: {
         title: "Chi Sono",
         intro:
-          "Ciao, sono Anastasia. Mi sono laureata al Politecnico di Torino in Cinema e Media Engineering, un percorso che mi ha permesso di unire competenze tecniche e creatività. Durante questi cinque anni ho lavorato a diversi progetti con i miei colleghi, sviluppando siti web, installazioni interattive e applicazioni immersive. Quello che mi affascina dell’ingegneria informatica, che sia orientata al codice o alla creatività, è la relazione tra persone e macchine: come comunicano, perché lo fanno, e quale significato ne deriva. Per la mia tesi ho portato questa domanda in un contesto per natura umanistico: il museo. Mi sono chiesta: come può la tecnologia favorire l’incontro tra cultura e persone? E soprattutto: come può dialogare, senza sovrastare i linguaggi tradizionali già consolidati, come la visita guidata? Oggi applico questi principi come Interaction Designer & Developer. Ogni progetto parte da una domanda: come questa tecnologia crea relazione e significato per chi la vive? Su Substack esploro questi temi dal punto di vista tecnico e umanistico. Il mio obiettivo è progettare esperienze digitali che rispettino la complessità delle persone e dei contesti culturali in cui si muovono.",
+          "Ciao, sono Anastasia. \nMi sono laureata al Politecnico di Torino in Cinema e Media Engineering, un percorso che mi ha permesso di unire competenze tecniche e creatività. Durante questi cinque anni ho lavorato a diversi progetti con i miei colleghi, sviluppando siti web, installazioni interattive e applicazioni immersive. \nQuello che mi affascina dell’ingegneria informatica, che sia orientata al codice o alla creatività, è la relazione tra persone e macchine: come comunicano, perché lo fanno, e quale significato ne deriva. \nPer la mia tesi ho portato questa domanda in un contesto per natura umanistico: il museo. Mi sono chiesta: come può la tecnologia favorire l’incontro tra cultura e persone? E soprattutto: come può dialogare, senza sovrastare i linguaggi tradizionali già consolidati, come la visita guidata? \nOggi applico questi principi come Interaction Designer & Developer. Ogni progetto parte da una domanda: come questa tecnologia crea relazione e significato per chi la vive? \nIl mio obiettivo è progettare esperienze digitali che rispettino la complessità delle persone e dei contesti culturali in cui si muovono.",
         expertise: "Aree di Competenza",
 
         skill1_title: "Immersive & Interactive Design",
@@ -189,6 +198,8 @@ export const translations = {
           "Laurea Triennale in Ingegneria del Cinema e dei Mezzi di Comunicazione",
         institution2: "Politecnico di Torino",
         year2: "2023",
+        cv1: "Scarica il mio CV completo",
+        cv2: "Scarica CV",
       },
       projects: {
         title: "Progetti",
@@ -236,12 +247,18 @@ export const translations = {
         project9_title: "Produzione Video per Enti Nonprofit",
         project9_desc:
           "Realizzazione, montaggio e post-produzione di contenuti video per Essere Umani Onlus e Fondazione Casa di Carità. Include color grading, motion graphics e sound design.",
-        project9_tags: "Video Editing, DaVinci Resolve, Motion Design, FFmpeg",
+        project9_tags: "Video Editing, DaVinci Resolve, Motion Design",
 
         project10_title: "Modellazione 3D Fotorealistica",
         project10_desc:
           "Creazione di ambienti 3D fotorealistici con Blender, incluso modeling, texturing con Substance Painter e rendering.",
         project10_tags: "Blender, Substance Painter, 3D Modeling, Rendering",
+
+        project11_title: "Tirocinio Frontend Developer - Ars Media",
+        project11_desc:
+          "Tirocinio come sviluppatore frontend presso Ars Media. Sviluppo di interfacce web responsive, ottimizzazione delle performance e collaborazione con i team di design e backend. Esperienza pratica in sviluppo web moderno e gestione di progetti client.",
+        project11_tags:
+          "HTML, CSS, JavaScript, Responsive Design, Web Development",
       },
       contact: {
         title: "Contatti",
