@@ -1,37 +1,8 @@
 import { useLanguage } from "../LanguageContext";
-import { useState } from "react";
 import "./Contact.css";
 
 export default function Contact() {
   const { t } = useLanguage();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Crea il link mailto con i dati del form
-    const mailtoLink = `mailto:anastasia@example.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
-    )}`;
-
-    window.location.href = mailtoLink;
-
-    // Resetta il form
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
 
   return (
     <div className="contact-container">
@@ -45,14 +16,14 @@ export default function Contact() {
         {/* METODI DI CONTATTO */}
         <section className="contact-methods">
           <div className="method-card">
-            <h3>📧 {t("pages.contact.email")}</h3>
-            <a href="mailto:anastasia@example.com" className="contact-link">
-              anastasia@example.com
+            <h3>Email</h3>
+            <a href="mailto:anastasiadb17@gmail.com" className="contact-link">
+              anastasiadb17@gmail.com
             </a>
           </div>
 
           <div className="method-card">
-            <h3>💼 LinkedIn</h3>
+            <h3>LinkedIn</h3>
             <a
               href="https://linkedin.com/in/anastasia-dominguez-burzio"
               target="_blank"
@@ -64,14 +35,32 @@ export default function Contact() {
           </div>
 
           <div className="method-card">
-            <h3>🔗 GitHub</h3>
+            <h3>GitHub</h3>
             <a
-              href="https://github.com"
+              href="https://github.com/anastasiadominguez"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"
             >
               github.com/anastasia
+            </a>
+          </div>
+        </section>
+
+        {/* NEWSLETTER SUBSTACK */}
+        <section className="contact-newsletter">
+          <div className="newsletter-card">
+            <h2>{t("pages.contact.substack_title")}</h2>
+            <p className="newsletter-desc">
+              {t("pages.contact.substack_desc")}
+            </p>
+            <a
+              href="https://anastasiadominguez.substack.com/?utm_campaign=profile_chips"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="newsletter-link"
+            >
+              {t("pages.contact.substack_link")} →
             </a>
           </div>
         </section>

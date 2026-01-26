@@ -64,7 +64,8 @@ export const translations = {
       },
       projects: {
         title: "Projects",
-
+        cta: "View",
+        thesis_read: "Explore the thesis",
         project1_title: "Collettivo EFFE Website",
         project1_desc:
           "Multilingual WordPress website for a theatrical collective. Custom Gutenberg blocks, GDPR compliance, SEO optimization and accessible design.",
@@ -203,7 +204,8 @@ export const translations = {
       },
       projects: {
         title: "Progetti",
-
+        cta: "Visualizza",
+        thesis_read: "Scropri la tesi",
         project1_title: "Sito Collettivo EFFE",
         project1_desc:
           "Sito WordPress multilingua per un collettivo teatrale. Include blocchi Gutenberg personalizzati, compliance GDPR, ottimizzazione SEO e design accessibile.",
@@ -264,7 +266,6 @@ export const translations = {
         title: "Contatti",
         intro:
           "Lavoriamo insieme! Puoi contattarmi attraverso uno dei canali sottostanti.",
-
         substack_title: "Passthrough Stories",
         substack_desc:
           "Newsletter dove esploro l'intersezione tra tecnologia, design e cultura. Articoli su interaction design, esperienze immersive e le dimensioni umane della tecnologia.",

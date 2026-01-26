@@ -60,14 +60,6 @@ export default function Home() {
       image: projectGame,
       link: "/projects/3",
     },
-    {
-      id: 4,
-      title: t("pages.projects.project5_title"),
-      desc: t("pages.projects.project5_desc"),
-      tags: t("pages.projects.project5_tags"),
-      image: projectAurora,
-      link: "/projects/5",
-    },
   ];
 
   return (
