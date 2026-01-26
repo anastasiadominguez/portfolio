@@ -242,7 +242,7 @@ export default function ProjectThesis() {
         {/* LINK ALLA TESI */}
         <div className="thesis-link-section">
           <a
-            href="https://tuolink-tesi.com"
+            href="http://webthesis.biblio.polito.it/id/eprint/38837"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button cta-primary"
